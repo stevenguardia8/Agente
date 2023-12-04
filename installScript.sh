@@ -461,7 +461,7 @@ function detect_package_type() {
   if [[ ($g_distro_name == "ubuntu" && $g_distro_version -ge 16 && $g_distro_version -le 22) \
      || ($g_distro_name == "debian" && $g_distro_version -ge 9  && $g_distro_version -le 11) ]]; then
     g_package_type="deb"
-  if
+  fi
 
   # centos-based distros
   if [[ ($g_distro_name == "centos" && $g_distro_version -ge 7 && $g_distro_version -le 9) \
@@ -480,7 +480,7 @@ function detect_package_type() {
       g_package_type="rpm"
       g_rpm_repo_config_file="/etc/zypp/repos.d/sbalinux.repo"
   fi
-{
+}
 
 function set_repo_type() {
   g_repo_type=${SBA_REPO_TYPE:=$g_repo_type}
