@@ -480,7 +480,7 @@ function detect_package_type() {
       g_package_type="rpm"
       g_rpm_repo_config_file="/etc/zypp/repos.d/sbalinux.repo"
   fi
-}
+{
 
 function set_repo_type() {
   g_repo_type=${SBA_REPO_TYPE:=$g_repo_type}
